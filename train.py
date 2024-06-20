@@ -1,5 +1,11 @@
 from ultralytics import YOLO
 import torch
+from googledriver import download_folder
+
+URL_DATASET = "https://drive.google.com/drive/folders/1kJQ1aiFHODO-TxE4LkJ3_kePeMZUJvCO?usp=sharing"
+print("Descargando dataset de google drive... Si la descarga no puede completarse entonces descargarlo manualmente")
+download_folder(URL_DATASET)
+print("Dataset descargado!")
 
 torch.backends.cudnn.enabled = False
 
