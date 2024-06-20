@@ -1,0 +1,6 @@
+ultralytics==8.0.222
+opencv-python==4.6.0.66
+tensorflow>=2.8,<2.9
+scikit-learn>=1.1,<1.2
+matplotlib
+gradio
